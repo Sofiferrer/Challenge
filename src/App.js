@@ -28,8 +28,8 @@ function App() {
   return (
     <div className="App">
       <div className="contanier">
-        <img src={animal.image} alt="imagen" className="animal-img" />
         <p className="animal-fact">{animal.fact}</p>
+        <img src={animal.image} alt="imagen" className="animal-img" />
         <button className="button" onClick={() => cargarAnimal()}>CARGAR</button>
       </div>
     </div>
