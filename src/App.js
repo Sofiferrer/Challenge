@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css'
 
 function App() {
@@ -13,6 +13,11 @@ function App() {
       .then(response => response.json())
       .then(json => setAnimal(json));
   }
+
+  //Se  carga la primer imagen cuando se monta la pagina
+  useEffect(() => {
+    fetchApi()
+  }, []);
 
   //funcion que recarga datos
   const cargarAnimal = () => {

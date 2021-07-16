@@ -16,6 +16,12 @@
     border-radius: 10px;    
 }
 
+.button {
+    border-radius: 2px;
+    width: 20%;
+    margin: auto;
+}
+
 .button:hover {
     background-color: aquamarine;
     margin-left: auto;
